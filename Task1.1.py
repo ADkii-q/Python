@@ -9,4 +9,4 @@ def task11(x, y):
     result = (a / b)- c - math.sqrt(d / e)
     return result
 
-print (task11 (17, 67))
+print (task11 (x, y))
