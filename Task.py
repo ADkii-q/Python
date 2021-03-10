@@ -69,3 +69,45 @@ def function4(x):
 
 
 ##################################################################################
+import math
+
+def task13(n, m):
+
+    print (f"{sum1(1, 1, n, m) + sum2(1, n, m):.2e}")
+
+
+def sum1(i, j, n, m):
+
+    result = 0.0
+    for x in range(i, n + 1):
+        for y in range(j, m + 1):
+            result = result + (math.pow(i, 3) - 23 * math.pow(j, 4))
+    return result
+
+
+def sum2(i, n, m):
+
+    result = 0.0
+    for x in range(i, n + 1):
+        result = result + (abs(i) + math.cos(i))
+    return result
+
+print (task13 (91, 23))
+
+#############################################################################
+import math
+
+def task14(n):
+
+    a = 0.0
+    b = 0.0
+    result = 8.0
+    if n > 0:
+        a = a + (1/89) * task14(n - 1)
+        b = b + math.sin * task14(n - 1)
+        result = a - b
+    return result
+
+print (task14 (14))
+
+#############################################################################
