@@ -122,3 +122,42 @@ def f22(x):
 
     return int(hex(b | c | d | a), 16)
 ##############################################################################
+from К25 import tests
+
+
+def f21(a):
+    if a[4] == 1966:
+        return 12
+    if a[4] == 1975:
+        return 11
+    if a[4] == 1991:
+        if a[2] == 1993:
+            if a[3] == 2016:
+                if a[1] == 'pike':
+                    return 0
+                if a[1] == 'haml':
+                    return 1
+            if a[3] == 2008:
+                if a[1] == 'pike':
+                    return 2
+                if a[1] == 'haml':
+                    return 3
+            if a[3] == 1969:
+                if a[1] == 'pike':
+                    return 4
+                if a[1] == 'haml':
+                    return 5
+        if a[2] == 1998:
+            if a[3] == 2016:
+                return 6
+            if a[3] == 2008:
+                if a[0] == 2009:
+                    return 7
+                if a[0] == 1976:
+                    return 8
+                if a[0] == 1973:
+                    return 9
+            if a[3] == 1969:
+                return 10
+    return 0
+##############################################################################
