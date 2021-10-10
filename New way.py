@@ -41,3 +41,17 @@ def sum2(i, n) -> float:
     return result
 
 print(f13(91, 23))
+=======( 4 )=========( Реализовать рекуррентную функцию )=================================
+import math
+
+
+def f14(n: object) -> float:
+    a = 0
+    b = 0
+    if n == 0:
+        return 8
+    else:
+        a = a + (1 / 89) * f14(n - 1)
+        b = b + math.sin(f14(n - 1))
+        return a - b
+print(f14(13))
