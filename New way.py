@@ -55,3 +55,36 @@ def f14(n: object) -> float:
         b = b + math.sin(f14(n - 1))
         return a - b
 print(f14(13))
+=======( 2.1 )=========( Реализовать функцию­дерево решений )=================================
+def f21(x):
+    if x[0] == 1969:
+        return 11
+    if x[0] == 2019:
+        if x[2] == 1976:
+            return 10
+        if x[2] == 1990:
+            return 9
+        if x[2] == 1977:
+            if x[3] == 1978:
+                return 6
+            if x[3] == 2020:
+                return 7
+            if x[3] == 1993:
+                return 8
+    if x[0] == 1973:
+        if x[2] == 1990:
+            return 2
+        if x[2] == 1976:
+            if x[3] == 1978:
+                return 3
+            if x[3] == 2020:
+                return 4
+            if x[3] == 1993:
+                return 5
+        if x[2] == 1977:
+            if x[1] == 2020:
+                return 0
+            if x[1] == 1976:
+                return 1
+
+print (f21([1969, 2020, 1976, 1993]))
