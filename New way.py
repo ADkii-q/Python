@@ -104,3 +104,49 @@ def f22(x) -> int:
     return hex(a | b | c | d)
 
 print(f22(0xa441eb39))
+=======( 3.2 )=========( класс C32 )============================================
+class C32:
+
+    def __init__(self):
+        self.state = 'A'
+
+    def rig(self):
+        if self.state == 'A':
+            self.state = 'G'
+            return 1
+        elif self.state == 'B':
+            self.state = 'E'
+            return 4
+        elif self.state == 'C':
+            self.state = 'E'
+            return 6
+        elif self.state == 'E':
+            self.state = 'F'
+            return 8
+        else:
+            return RuntimeError
+
+    def amble(self):
+        if self.state == 'A':
+            self.state = 'E'
+            return 2
+        if self.state == 'C':
+            self.state = 'D'
+        else:
+            return RuntimeError
+
+    def click(self):
+        if self.state == 'A':
+            self.state = 'B'
+            return 0
+        if self.state == 'B':
+            self.state = 'C'
+            return 3
+        if self.state == 'D':
+            self.state = 'E'
+            return 7
+        if self.state == 'F':
+            self.state = 'G'
+            return 9
+        else:
+            return RuntimeError
